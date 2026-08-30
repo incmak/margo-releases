@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Margo is a tiny plain-text companion that keeps five local notes at the edge of your Mac.">
+  <meta name="theme-color" content="#181311">
+  <title>Margo for Mac</title>
+  <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mast">
+      <a class="brand" href="#main" aria-label="Margo home">
+        <img src="assets/MargoMark.svg" alt="">
+        <span>Margo</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#install">Install</a>
+        <a href="#privacy">Privacy</a>
+        <a href="https://github.com/incmak/margo-releases">Releases</a>
+      </nav>
+      <p class="build-state">Free unsigned beta</p>
+    </header>
+
+    <main id="main">
+      <section class="opening" aria-labelledby="opening-title">
+        <h1 id="opening-title">
+          <span class="title-wide">Keep this thought</span>
+          <span class="title-wide">at the edge of your Mac.</span>
+          <span class="title-compact">Notes at your<br>Mac's edge.</span>
+        </h1>
+
+        <p class="opening-note">
+          Margo holds five plain-text notes in your Mac's right margin. Hover, write, and return to what you were doing.
+        </p>
+
+        <div class="download-group">
+          <a class="download-stub" href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip" aria-describedby="unsigned-warning">
+            <strong>Download Margo</strong>
+            <span>0.1.0&nbsp;&nbsp; Apple silicon&nbsp;&nbsp; ZIP</span>
+          </a>
+          <p id="unsigned-warning">Not Developer ID signed or notarized. macOS requires a manual security override on first launch.</p>
+        </div>
+      </section>
+
+      <section class="thought-field" aria-labelledby="thoughts-title">
+        <h2 id="thoughts-title">For what is moving now.</h2>
+        <ul aria-label="Example margin notes">
+          <li>Call Priya at 4</li>
+          <li>send the draft before lunch</li>
+          <li>brew install ffmpeg</li>
+          <li>the sentence I am still rewriting</li>
+        </ul>
+        <p>Not a knowledge base. Not another inbox. Just the small things you need close for a while.</p>
+      </section>
+
+      <section class="install" id="install" aria-labelledby="install-title">
+        <div class="install-intro">
+          <h2 id="install-title">Free means one extra gate.</h2>
+          <p>Apple has not checked this build. Review the release notes and checksum first. Only continue if you trust this download.</p>
+        </div>
+
+        <ol>
+          <li>
+            <span aria-hidden="true">1</span>
+            <p>Download the ZIP, open it, and move <strong>Margo.app</strong> to Applications.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">2</span>
+            <p>Try to open Margo once. macOS will block the unsigned app. Dismiss the warning.</p>
+          </li>
+          <li>
+            <span aria-hidden="true">3</span>
+            <p>Open System Settings, choose Privacy &amp; Security, then select <strong>Open Anyway</strong> and confirm.</p>
+          </li>
+        </ol>
+
+        <div class="install-links">
+          <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac">Read Apple's security guidance</a>
+          <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the SHA-256 checksum</a>
+        </div>
+      </section>
+
+      <section class="ledger" aria-label="Product facts">
+        <article id="privacy">
+          <h2>Local by default.</h2>
+          <p>Your notes stay in one JSON file on your Mac. Margo has no account, server, analytics, ads, AI, sync, crash SDK, or content upload.</p>
+          <a href="privacy.html">Read the privacy note</a>
+        </article>
+
+        <article>
+          <h2>Small on purpose.</h2>
+          <p>This beta supports Apple-silicon Macs on macOS 15 or later, the main display, and normal desktop Spaces. It does not support secondary displays or full-screen app Spaces yet.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/MargoMark.svg" alt="">
+      <span>Margo 0.1.0</span>
+      <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
+    </footer>
+  </div>
+
+  <details class="edge-guide">
+    <summary><span>Install note</span></summary>
+    <div class="edge-guide-note">
+      <strong>Unsigned beta</strong>
+      <p>Try to open Margo once, then allow it from System Settings &gt; Privacy &amp; Security.</p>
+      <a href="#install">See all three steps</a>
+    </div>
+  </details>
+</body>
+</html>

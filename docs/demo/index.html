@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Margo edge notes prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="desktop" id="prototype" data-state="open">
+    <img class="wallpaper" src="assets/wallpaper.jpg" alt="">
+
+    <section class="edge-app" aria-label="Margo edge notes">
+      <button class="rest-rail" id="rest-rail" type="button" aria-label="Show Margo notes">
+        <span class="rest-dashes" id="rest-dashes" aria-hidden="true">
+          <span style="--dash: #2280d6"></span>
+          <span style="--dash: #0e9b6e"></span>
+          <span style="--dash: #dc4570"></span>
+          <span style="--dash: #e0ad08"></span>
+        </span>
+      </button>
+
+      <section class="fan" id="fan" aria-label="Margo notes">
+        <div class="fan-deck" id="fan-deck">
+          <button class="note-tab" type="button" style="--paper: #beddfa; --ink: #13293a; --dash: #2280d6; --tab-index: 0">
+            <span>Launch day</span>
+          </button>
+          <button class="note-tab" type="button" style="--paper: #b4e8d0; --ink: #0f2e23; --dash: #0e9b6e; --tab-index: 1">
+            <span>Groceries</span>
+          </button>
+          <button class="note-tab" type="button" style="--paper: #fac4d1; --ink: #40161f; --dash: #dc4570; --tab-index: 2">
+            <span>Call Nila</span>
+          </button>
+          <button class="note-tab" type="button" style="--paper: #fce795; --ink: #3a3008; --dash: #e0ad08; --tab-index: 3">
+            <span>Draft</span>
+          </button>
+        </div>
+        <button class="add-note" id="add-note" type="button" aria-label="New note">
+          <img src="assets/plus.svg" alt="">
+        </button>
+      </section>
+
+      <section class="editor" id="editor" aria-label="Open note" style="--paper: #b4e8d0; --gutter: #a5ddc3; --ink: #0f2e23; --dash: #0e9b6e">
+        <aside class="paper-gutter" aria-hidden="true">
+          <span id="gutter-label">Groceries</span>
+        </aside>
+
+        <div class="paper-sheet">
+          <header class="note-header">
+            <input id="note-title" type="text" value="Groceries" aria-label="Note title" autocomplete="off" spellcheck="false">
+            <span class="save-state" id="save-state" role="status">Saved just now</span>
+          </header>
+
+          <textarea id="note-body" aria-label="Note text" spellcheck="true">- apples
+- 4 bananas
+- dry fruits
+- peanuts</textarea>
+
+          <footer class="note-footer">
+            <div class="swatches" id="swatches" role="group" aria-label="Note color"></div>
+            <div class="note-actions">
+              <button id="delete-note" type="button">Delete</button>
+              <button id="close-note" type="button">Close</button>
+            </div>
+          </footer>
+        </div>
+      </section>
+    </section>
+
+    <nav class="preview-controls" aria-label="Prototype state">
+      <strong>Margo prototype</strong>
+      <div class="preview-actions">
+        <button type="button" data-preview-state="rest" aria-pressed="false"><kbd>1</kbd> Rest</button>
+        <button type="button" data-preview-state="fan" aria-pressed="false"><kbd>2</kbd> Fan</button>
+        <button type="button" data-preview-state="open" aria-pressed="true"><kbd>3</kbd> Open</button>
+        <button type="button" id="reset-prototype">Reset</button>
+      </div>
+    </nav>
+  </main>
+
+  <noscript>The open note remains visible, but this prototype needs JavaScript for state changes and editing.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>

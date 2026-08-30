@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Margo 0.1 stores and handles note data.">
+  <meta name="theme-color" content="#181311">
+  <title>Margo 0.1 privacy note</title>
+  <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="privacy-page">
+  <a class="skip-link" href="#privacy-note">Skip to content</a>
+
+  <div class="site-shell">
+    <header class="mast">
+      <a class="brand" href="index.html" aria-label="Margo home">
+        <img src="assets/MargoMark.svg" alt="">
+        <span>Margo</span>
+      </a>
+      <nav aria-label="Privacy navigation">
+        <a href="index.html#install">Install</a>
+        <a href="https://github.com/incmak/margo-releases">Releases</a>
+      </nav>
+      <p class="build-state">Privacy note</p>
+    </header>
+
+    <main class="privacy-copy" id="privacy-note">
+      <h1><span>Stored here.</span><span>Sent nowhere.</span></h1>
+      <p class="privacy-lead">Margo 0.1 has no account, server, analytics, advertising, AI, sync, crash-reporting SDK, or content upload.</p>
+
+      <section>
+        <h2>What is stored</h2>
+        <p>Note text, marker colors, note order, and timestamps live in <code>~/Library/Application Support/Margo/notes.json</code>.</p>
+      </section>
+
+      <section>
+        <h2>What leaves your Mac</h2>
+        <p>Nothing from Margo. Version 0.1 makes no network requests. Opening the feedback link hands that action to your default browser.</p>
+      </section>
+
+      <section>
+        <h2>Launch at Login</h2>
+        <p>The optional Launch at Login switch is off by default and managed by macOS through Service Management.</p>
+      </section>
+
+      <section>
+        <h2>Removing your data</h2>
+        <p>Deleting Margo.app does not remove your notes file. Copy anything you want to keep, then delete the Margo folder in Application Support.</p>
+      </section>
+    </main>
+
+    <footer>
+      <img src="assets/MargoMark.svg" alt="">
+      <span>Margo 0.1.0</span>
+      <a href="index.html">Return to Margo</a>
+    </footer>
+  </div>
+</body>
+</html>
