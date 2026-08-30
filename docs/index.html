@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Margo is a tiny plain-text companion that keeps five local notes at the edge of your Mac.">
-  <meta name="theme-color" content="#181311">
+  <meta name="theme-color" content="#071712">
   <title>Margo for Mac</title>
   <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -18,38 +18,69 @@
         <img src="assets/MargoMark.svg" alt="">
         <span>Margo</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#install">Install</a>
-        <a href="#privacy">Privacy</a>
-        <a href="https://github.com/incmak/margo-releases">Releases</a>
-      </nav>
       <p class="build-state">Free unsigned beta</p>
     </header>
+
+    <nav class="edge-nav" aria-label="Page shortcuts">
+      <a class="edge-tab edge-tab-demo" href="demo/"><span>Demo</span></a>
+      <a class="edge-tab edge-tab-install" href="#install"><span>Install</span></a>
+      <a class="edge-tab edge-tab-privacy" href="#privacy"><span>Privacy</span></a>
+      <a class="edge-tab edge-tab-releases" href="https://github.com/incmak/margo-releases/releases"><span>Releases</span></a>
+    </nav>
 
     <main id="main">
       <section class="opening" aria-labelledby="opening-title">
         <h1 id="opening-title">
           <span class="title-wide">Keep this thought</span>
-          <span class="title-wide">at the edge of your Mac.</span>
-          <span class="title-compact">Notes at your<br>Mac's edge.</span>
+          <span class="title-wide">at your Mac’s edge.</span>
+          <span class="title-compact">Notes at your<br>Mac’s edge.</span>
         </h1>
 
-        <p class="opening-note">
-          Margo holds five plain-text notes in your Mac's right margin. Hover, write, and return to what you were doing.
-        </p>
+        <div class="opening-lower">
+          <div class="opening-copy">
+            <p>Margo keeps five plain-text notes at the right edge of your Mac. Hover, write, and return to what you were doing.</p>
+            <a class="demo-callout" href="demo/">
+              <span class="demo-rails" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </span>
+              <span class="demo-callout-copy">
+                <strong>Try the live demo</strong>
+                <small>Fan the notes open in your browser</small>
+              </span>
+              <span class="outward-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
 
-        <div class="download-group">
-          <a class="download-stub" href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip" aria-describedby="unsigned-warning">
-            <strong>Download Margo</strong>
-            <span>0.1.0&nbsp;&nbsp; Apple silicon&nbsp;&nbsp; ZIP</span>
-          </a>
-          <p id="unsigned-warning">Not Developer ID signed or notarized. macOS requires a manual security override on first launch.</p>
+          <div class="download-group">
+            <a class="download-sheet" href="https://github.com/incmak/margo-releases/releases/download/v0.1.0/Margo-0.1.0.zip" aria-describedby="unsigned-warning">
+              <span class="download-label">Download the free beta</span>
+              <span class="download-meta">macOS 13+ · Apple silicon &amp; Intel · 0.1.0</span>
+            </a>
+            <p id="unsigned-warning">Unsigned and not notarized. macOS requires one manual security override on first launch.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-stage" id="demo" aria-labelledby="demo-title">
+        <div class="demo-stage-copy">
+          <h2 id="demo-title">Try the edge.</h2>
+          <div>
+            <p>Use Rest, Fan, and Open. Pick a note, write in it, change its color, or add a new one.</p>
+            <a href="demo/">Open the full demo <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="demo-frame">
+          <iframe
+            src="demo/?state=open"
+            title="Interactive Margo browser demo"
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
 
       <section class="thought-field" aria-labelledby="thoughts-title">
         <h2 id="thoughts-title">For what is moving now.</h2>
-        <ul aria-label="Example margin notes">
+        <ul class="thought-stream" aria-label="Example margin notes">
           <li>Call Priya at 4</li>
           <li>send the draft before lunch</li>
           <li>brew install ffmpeg</li>
@@ -60,28 +91,35 @@
 
       <section class="install" id="install" aria-labelledby="install-title">
         <div class="install-intro">
-          <h2 id="install-title">Free means one extra gate.</h2>
-          <p>Apple has not checked this build. Review the release notes and checksum first. Only continue if you trust this download.</p>
+          <h2 id="install-title">Install it with eyes open.</h2>
+          <p>Apple has not checked this free build. Review the release and checksum first. Continue only if you trust the download.</p>
         </div>
 
-        <ol>
-          <li>
-            <span aria-hidden="true">1</span>
-            <p>Download the ZIP, open it, and move <strong>Margo.app</strong> to Applications.</p>
-          </li>
-          <li>
-            <span aria-hidden="true">2</span>
-            <p>Try to open Margo once. macOS will block the unsigned app. Dismiss the warning.</p>
-          </li>
-          <li>
-            <span aria-hidden="true">3</span>
-            <p>Open System Settings, choose Privacy &amp; Security, then select <strong>Open Anyway</strong> and confirm.</p>
-          </li>
-        </ol>
+        <div class="install-sheet">
+          <ol>
+            <li>
+              <span class="step-number" aria-hidden="true">1</span>
+              <p><strong>Move it.</strong> Download the ZIP, open it, and move <b>Margo.app</b> to Applications.</p>
+            </li>
+            <li>
+              <span class="step-number" aria-hidden="true">2</span>
+              <p><strong>Let macOS block it once.</strong> Try to open Margo, then dismiss the unsigned-app warning.</p>
+            </li>
+            <li>
+              <span class="step-number" aria-hidden="true">3</span>
+              <p><strong>Open it deliberately.</strong> In Privacy &amp; Security, choose <b>Open Anyway</b> and confirm.</p>
+            </li>
+          </ol>
 
-        <div class="install-links">
-          <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac">Read Apple's security guidance</a>
-          <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the SHA-256 checksum</a>
+          <div class="install-links">
+            <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac">Read Apple’s security guidance</a>
+            <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the SHA-256 checksum</a>
+          </div>
+
+          <details class="unsigned-details">
+            <summary>Why is this unsigned?</summary>
+            <p>Margo is a free beta and is not notarized yet. macOS may quarantine unsigned downloads, so use Open Anyway after checking the checksum.</p>
+          </details>
         </div>
       </section>
 
@@ -94,25 +132,22 @@
 
         <article>
           <h2>Small on purpose.</h2>
-          <p>This beta supports Apple-silicon Macs on macOS 15 or later, the main display, and normal desktop Spaces. It does not support secondary displays or full-screen app Spaces yet.</p>
+          <p>This beta supports macOS 13 or later, Apple silicon and Intel, the main display, and normal desktop Spaces. Secondary displays and full-screen app Spaces are not supported yet.</p>
         </article>
       </section>
     </main>
 
     <footer>
-      <img src="assets/MargoMark.svg" alt="">
-      <span>Margo 0.1.0</span>
-      <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
+      <div class="footer-brand">
+        <img src="assets/MargoMark.svg" alt="">
+        <span>Margo 0.1.0</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="demo/">Demo</a>
+        <a href="https://github.com/incmak/margo-releases/releases">Releases</a>
+        <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
+      </nav>
     </footer>
   </div>
-
-  <details class="edge-guide">
-    <summary><span>Install note</span></summary>
-    <div class="edge-guide-note">
-      <strong>Unsigned beta</strong>
-      <p>Try to open Margo once, then allow it from System Settings &gt; Privacy &amp; Security.</p>
-      <a href="#install">See all three steps</a>
-    </div>
-  </details>
 </body>
 </html>
