@@ -11,7 +11,7 @@
     {
       id: "launch-day",
       title: "Launch day",
-      body: "Send the beta link to Nila\nVerify the checksum\nWrite the release note",
+      body: "Send the beta link to Daniel\nVerify the checksum\nWrite the release note",
       color: "sky"
     },
     {
@@ -21,8 +21,8 @@
       color: "mint"
     },
     {
-      id: "call-nila",
-      title: "Call Nila",
+      id: "call-emma",
+      title: "Call Emma",
       body: "Ask about the icon export\nConfirm Friday at 3:30",
       color: "rose"
     },
