@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Margo is a tiny plain-text companion that keeps five local notes at the edge of your Mac.">
+  <meta name="description" content="Margo is a local plain-text notes app with an unlimited Library and five notes kept at the edge of every Mac display.">
   <meta name="theme-color" content="#071712">
-  <title>Margo for Mac</title>
+  <title>Margo: Local notes for Mac</title>
   <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=edge-canvas-2">
+  <link rel="stylesheet" href="styles.css?v=edge-library-1">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -18,33 +18,34 @@
         <img src="assets/MargoMark.svg" alt="">
         <span>Margo</span>
       </a>
-      <p class="build-state">Free unsigned beta</p>
+      <p class="build-state">Library update preview</p>
     </header>
 
     <nav class="edge-nav" aria-label="Page shortcuts">
-      <a class="edge-tab edge-tab-demo" href="demo/"><span>Demo</span></a>
+      <a class="edge-tab edge-tab-demo" href="https://incmak.github.io/margo-releases/demo/"><span>Demo</span></a>
       <a class="edge-tab edge-tab-install" href="#install"><span>Install</span></a>
-      <a class="edge-tab edge-tab-privacy" href="#privacy"><span>Privacy</span></a>
+      <a class="edge-tab edge-tab-help" href="help.html"><span>Help</span></a>
+      <a class="edge-tab edge-tab-privacy" href="privacy.html"><span>Privacy</span></a>
       <a class="edge-tab edge-tab-releases" href="https://github.com/incmak/margo-releases/releases"><span>Releases</span></a>
     </nav>
 
     <main id="main">
       <section class="opening" aria-labelledby="opening-title">
         <h1 id="opening-title">
-          <span class="title-wide">Keep this thought</span>
-          <span class="title-wide">at your Mac’s edge.</span>
-          <span class="title-compact">Notes at your<br>Mac’s edge.</span>
+          <span class="title-wide">Every note has a home.</span>
+          <span class="title-wide">Five stay within reach.</span>
+          <span class="title-compact">Every note.<br>Five at the edge.</span>
         </h1>
 
         <div class="opening-lower">
           <div class="opening-copy">
-            <p>Margo keeps five plain-text notes at the right edge of your Mac. Hover, write, and return to what you were doing.</p>
-            <a class="demo-callout" href="demo/">
+            <p>Margo is a local plain-text notes app with a full searchable Library and five notes kept at the edge of every display.</p>
+            <a class="demo-callout" href="https://incmak.github.io/margo-releases/demo/">
               <span class="demo-rails" aria-hidden="true">
                 <i></i><i></i><i></i><i></i>
               </span>
               <span class="demo-callout-copy">
-                <strong>Try the live demo</strong>
+                <strong>Try the edge interaction</strong>
                 <small>Fan the notes open in your browser</small>
               </span>
               <span class="outward-arrow" aria-hidden="true">↗</span>
@@ -53,8 +54,8 @@
 
           <div class="download-group">
             <a class="download-sheet" href="https://github.com/incmak/margo-releases/releases/download/v0.1.0/Margo-0.1.0.zip" aria-describedby="unsigned-warning">
-              <span class="download-label">Download the free beta</span>
-              <span class="download-meta">macOS 15+ · Apple silicon · 0.1.0</span>
+              <span class="download-label">Download the current public beta</span>
+              <span class="download-meta">macOS 15+ · Apple silicon · version 0.1.0</span>
             </a>
             <p id="unsigned-warning">Unsigned and not notarized. macOS requires one manual security override on first launch.</p>
           </div>
@@ -65,28 +66,111 @@
         <div class="demo-stage-copy">
           <h2 id="demo-title">Try the edge.</h2>
           <div>
-            <p>Use Rest, Fan, and Open. Pick a note, write in it, change its color, or add a new one.</p>
-            <a href="demo/">Open the full demo <span aria-hidden="true">↗</span></a>
+            <p>The browser demo focuses on Margo’s quickest surface. Use Rest, Fan, and Open, then write, recolor, add, or delete a sample sticky.</p>
+            <a href="https://incmak.github.io/margo-releases/demo/">Open the full demo <span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div class="demo-frame">
           <iframe
-            src="demo/?state=open"
-            title="Interactive Margo browser demo"
+            src="https://incmak.github.io/margo-releases/demo/?state=open"
+            title="Interactive Margo edge-note demo"
             loading="lazy"
           ></iframe>
         </div>
       </section>
 
-      <section class="thought-field" aria-labelledby="thoughts-title">
-        <h2 id="thoughts-title">Keep the next thing close.</h2>
-        <ul class="thought-stream" aria-label="Example margin notes">
-          <li>Call Emma at 4</li>
-          <li>Email Daniel the proposal</li>
-          <li>Review the launch checklist</li>
-          <li>Refine the opening paragraph</li>
+      <section class="capability-field" aria-labelledby="capability-title">
+        <h2 id="capability-title">The edge is a choice, not a limit.</h2>
+        <ul class="capability-stream" aria-label="Ways to work with Margo">
+          <li>Search the whole Library</li>
+          <li>Pin what must stay visible</li>
+          <li>Open any sticky full-size</li>
+          <li>Archive without losing it</li>
         </ul>
-        <p>No filing system. No second inbox. Just what you need in reach until it is done.</p>
+        <p>Keep every thought in Margo. Choose only the five that deserve a place at the edge.</p>
+      </section>
+
+      <section class="feature-index" aria-labelledby="feature-title">
+        <header class="feature-index-intro">
+          <h2 id="feature-title">A complete notes app behind the margin.</h2>
+          <p>The Library carries the long view. The edge keeps today within reach.</p>
+        </header>
+
+        <section class="feature-group" aria-labelledby="write-title">
+          <h3 id="write-title">Write</h3>
+          <dl>
+            <div class="feature-row">
+              <dt>Full Library</dt>
+              <dd>Open Margo as a normal resizable Mac app and keep any number of plain-text notes.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Instant search</dt>
+              <dd>Filter edge notes, Library notes, and archived notes from one search field.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Edge stickies</dt>
+              <dd>Keep up to five notes one hover away at the right edge of every connected display.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Pinning</dt>
+              <dd>Keep a sticky open when Margo loses focus and protect it from automatic replacement.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Open in Margo</dt>
+              <dd>Move from a small sticky to the full window with the same note already selected.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="feature-group" aria-labelledby="move-title">
+          <h3 id="move-title">Move</h3>
+          <dl>
+            <div class="feature-row">
+              <dt>Edge placement</dt>
+              <dd>Put a Library note at the edge or remove an edge note without archiving it.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Clear precedence</dt>
+              <dd>When five slots are full, Margo asks before moving the oldest unpinned note into the Library.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Archive and restore</dt>
+              <dd>Set a note aside, then restore it to the Library without displacing an edge note.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Delete and undo</dt>
+              <dd>Remove a note deliberately and recover the latest deletion from the menu bar or keyboard.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="feature-group" aria-labelledby="keep-title">
+          <h3 id="keep-title">Keep</h3>
+          <dl>
+            <div class="feature-row">
+              <dt>Text import and export</dt>
+              <dd>Bring in UTF-8 text files and export any selected note as plain text.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Complete backups</dt>
+              <dd>Save the entire Library as a .margo file and restore it with a recovery copy.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Every display</dt>
+              <dd>Use one edge deck per connected display, with shortcuts targeting the display under the pointer.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Mac shortcuts</dt>
+              <dd>Create a note with ⌥⌘N, show the edge with ⌥⌘M, and use Launch at Login when wanted.</dd>
+            </div>
+            <div class="feature-row">
+              <dt>Local storage</dt>
+              <dd>Your text stays on this Mac with no account, server, analytics, advertising, AI, or sync.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <p class="feature-help-link"><a href="help.html">Read the complete Margo Help</a></p>
       </section>
 
       <section class="install" id="install" aria-labelledby="install-title">
@@ -113,7 +197,7 @@
 
           <div class="install-links">
             <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac">Read Apple’s security guidance</a>
-            <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the SHA-256 checksum</a>
+            <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the 0.1.0 SHA-256 checksum</a>
           </div>
 
           <details class="unsigned-details">
@@ -125,14 +209,15 @@
 
       <section class="ledger" aria-label="Product facts">
         <article id="privacy">
-          <h2>Local by default.</h2>
-          <p>Your notes stay in one JSON file on your Mac. Margo has no account, server, analytics, ads, AI, sync, crash SDK, or content upload.</p>
+          <h2>Stored here. Sent nowhere.</h2>
+          <p>Your notes and their Library state stay in one JSON file on your Mac. Margo has no account, server, analytics, ads, AI, sync, crash SDK, or content upload.</p>
           <a href="privacy.html">Read the privacy note</a>
         </article>
 
         <article>
-          <h2>Small on purpose.</h2>
-          <p>This beta supports Apple-silicon Macs on macOS 15 or later, the main display, and normal desktop Spaces. Secondary displays and full-screen app Spaces are not supported yet.</p>
+          <h2>Made for the Mac you use.</h2>
+          <p>Margo supports Apple-silicon Macs on macOS 15 or later, every connected display, and normal desktop Spaces. Full-screen app Spaces are not supported in the current beta.</p>
+          <a href="help.html">Open Margo Help</a>
         </article>
       </section>
     </main>
@@ -140,10 +225,11 @@
     <footer>
       <div class="footer-brand">
         <img src="assets/MargoMark.svg" alt="">
-        <span>Margo 0.1.0</span>
+        <span>Current public beta 0.1.0</span>
       </div>
       <nav aria-label="Footer navigation">
-        <a href="demo/">Demo</a>
+        <a href="https://incmak.github.io/margo-releases/demo/">Demo</a>
+        <a href="help.html">Help</a>
         <a href="https://github.com/incmak/margo-releases/releases">Releases</a>
         <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
       </nav>

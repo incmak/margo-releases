@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="How Margo 0.1 stores and handles note data.">
+  <meta name="description" content="How Margo stores and handles note data locally on your Mac.">
   <meta name="theme-color" content="#071712">
-  <title>Margo 0.1 privacy note</title>
+  <title>Margo privacy note</title>
   <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=edge-canvas-2">
+  <link rel="stylesheet" href="styles.css?v=edge-library-1">
 </head>
 <body class="privacy-page">
   <a class="skip-link" href="#privacy-note">Skip to content</a>
@@ -22,25 +22,26 @@
     </header>
 
     <nav class="edge-nav" aria-label="Page shortcuts">
-      <a class="edge-tab edge-tab-demo" href="demo/"><span>Demo</span></a>
+      <a class="edge-tab edge-tab-demo" href="https://incmak.github.io/margo-releases/demo/"><span>Demo</span></a>
       <a class="edge-tab edge-tab-install" href="index.html#install"><span>Install</span></a>
+      <a class="edge-tab edge-tab-help" href="help.html"><span>Help</span></a>
       <a class="edge-tab edge-tab-privacy" href="#privacy-note" aria-current="page"><span>Privacy</span></a>
       <a class="edge-tab edge-tab-releases" href="https://github.com/incmak/margo-releases/releases"><span>Releases</span></a>
     </nav>
 
     <main class="privacy-copy" id="privacy-note">
       <h1><span>Stored here.</span><span>Sent nowhere.</span></h1>
-      <p class="privacy-lead">Margo 0.1 has no account, server, analytics, advertising, AI, sync, crash-reporting SDK, or content upload.</p>
+      <p class="privacy-lead">Margo has no account, server, analytics, advertising, AI, sync, crash-reporting SDK, or content upload.</p>
 
       <div class="privacy-sections">
         <section>
           <h2>What is stored</h2>
-          <p>Note text, marker colors, note order, and timestamps live in <code>~/Library/Application Support/Margo/notes.json</code>.</p>
+          <p>Note text, marker colors, note order, timestamps, edge placement, archive state, and pin state live in <code>~/Library/Application Support/Margo/notes.json</code>.</p>
         </section>
 
         <section>
           <h2>What leaves your Mac</h2>
-          <p>Nothing from Margo. Version 0.1 makes no network requests. Opening the feedback link hands that action to your default browser.</p>
+          <p>Nothing from Margo. The app makes no network requests. Opening Help, a release, Apple guidance, or the feedback link hands that explicit action to your browser.</p>
         </section>
 
         <section>
@@ -60,10 +61,11 @@
     <footer>
       <div class="footer-brand">
         <img src="assets/MargoMark.svg" alt="">
-        <span>Margo 0.1.0</span>
+        <span>Margo privacy note</span>
       </div>
       <nav aria-label="Footer navigation">
-        <a href="demo/">Demo</a>
+        <a href="https://incmak.github.io/margo-releases/demo/">Demo</a>
+        <a href="help.html">Help</a>
         <a href="https://github.com/incmak/margo-releases/releases">Releases</a>
         <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
       </nav>

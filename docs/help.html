@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete Help for Margo: install, Library, edge notes, search, archive, backups, shortcuts, privacy, and troubleshooting.">
+  <meta name="theme-color" content="#071712">
+  <title>Margo Help</title>
+  <link rel="icon" href="assets/MargoMark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=edge-library-1">
+</head>
+<body class="help-page">
+  <a class="skip-link" href="#help-article">Skip to Help</a>
+
+  <div class="site-shell">
+    <header class="mast">
+      <a class="brand" href="index.html" aria-label="Margo home">
+        <img src="assets/MargoMark.svg" alt="">
+        <span>Margo</span>
+      </a>
+      <p class="build-state">Help</p>
+    </header>
+
+    <nav class="edge-nav" aria-label="Page shortcuts">
+      <a class="edge-tab edge-tab-demo" href="https://incmak.github.io/margo-releases/demo/"><span>Demo</span></a>
+      <a class="edge-tab edge-tab-install" href="index.html#install"><span>Install</span></a>
+      <a class="edge-tab edge-tab-help" href="#help" aria-current="page"><span>Help</span></a>
+      <a class="edge-tab edge-tab-privacy" href="privacy.html"><span>Privacy</span></a>
+      <a class="edge-tab edge-tab-releases" href="https://github.com/incmak/margo-releases/releases"><span>Releases</span></a>
+    </nav>
+
+    <main class="help-layout" id="help">
+      <aside class="help-contents" aria-labelledby="contents-title">
+        <h1 id="contents-title">Margo Help</h1>
+        <nav aria-label="Help topics">
+          <a href="#start">Install and start</a>
+          <a href="#library">Library and search</a>
+          <a href="#edge">The five edge slots</a>
+          <a href="#organize">Move, archive, and delete</a>
+          <a href="#files">Import, export, and backup</a>
+          <a href="#shortcuts">Displays and shortcuts</a>
+          <a href="#privacy">Data and privacy</a>
+          <a href="#troubleshooting">Troubleshooting</a>
+        </nav>
+      </aside>
+
+      <article class="help-article" id="help-article">
+        <p class="help-lead">Install Margo, manage the whole Library, and keep five notes at the edge.</p>
+
+        <section class="help-section" id="start">
+          <h2>Install and start</h2>
+          <ol>
+            <li>Download the current ZIP and compare its published SHA-256 checksum.</li>
+            <li>Open the ZIP and move <b>Margo.app</b> to Applications.</li>
+            <li>Try to open Margo once, then dismiss the unsigned-app warning.</li>
+            <li>Open System Settings, choose Privacy &amp; Security, select <b>Open Anyway</b>, and confirm.</li>
+          </ol>
+          <p>Apple has not checked or notarized this free build. Continue only if you trust the file and understand the override.</p>
+          <p class="help-links">
+            <a href="https://support.apple.com/guide/mac-help/open-a-mac-app-from-an-unknown-developer-mh40616/mac">Read Apple’s security guidance</a>
+            <a href="https://github.com/incmak/margo-releases/releases/latest/download/Margo-0.1.0.zip.sha256">Download the 0.1.0 checksum</a>
+          </p>
+          <div class="help-note">
+            <strong>Reopen Margo</strong>
+            <p>Open Margo from Applications, select <b>Open Margo</b> from its menu bar icon, or click its Dock icon. Closing the Library window does not quit the app.</p>
+          </div>
+        </section>
+
+        <section class="help-section" id="library">
+          <h2>Library and search</h2>
+          <p>Margo opens as a normal resizable Mac app. Choose <b>New Note</b> or press <kbd>⌥⌘N</kbd>, then type. Margo saves plain text automatically.</p>
+          <p>The sidebar has three non-overlapping sections:</p>
+          <dl class="help-definitions">
+            <div>
+              <dt>At the Edge</dt>
+              <dd>Up to five active notes shown from the right edge of each display.</dd>
+            </div>
+            <div>
+              <dt>Library</dt>
+              <dd>Every other active note. The Library has no five-note limit.</dd>
+            </div>
+            <div>
+              <dt>Archive</dt>
+              <dd>Notes set aside without deleting their text.</dd>
+            </div>
+          </dl>
+          <p>Use the sidebar search field to filter all three sections. Search checks the complete note text, not only the first-line label.</p>
+        </section>
+
+        <section class="help-section" id="edge">
+          <h2>The five edge slots</h2>
+          <p>Move the pointer to the right edge of a display to fan the notes open. Select a paper tab to edit its sticky. Press <kbd>Esc</kbd> to close the expanded deck.</p>
+          <p>When fewer than five edge slots are used, a new note enters the edge. When all five are used, Margo names the oldest unpinned edge note and offers three choices:</p>
+          <dl class="help-definitions">
+            <div>
+              <dt>Move and Create</dt>
+              <dd>Keep the named note in the Library and open the new note at the edge.</dd>
+            </div>
+            <div>
+              <dt>Create in Library</dt>
+              <dd>Leave all five edge notes where they are and open the new note in the full window.</dd>
+            </div>
+            <div>
+              <dt>Cancel</dt>
+              <dd>Make no placement or note change.</dd>
+            </div>
+          </dl>
+          <p><b>Pin</b> keeps an edge sticky open when Margo loses focus and protects that note from automatic replacement. If all five edge notes are pinned, new notes open in the Library.</p>
+          <p>Choose <b>Open in Margo</b> on a sticky to close the small editor and open the full Library with the same note selected.</p>
+        </section>
+
+        <section class="help-section" id="organize">
+          <h2>Move, archive, and delete</h2>
+          <p>Select an active note in the Library and use its toolbar:</p>
+          <dl class="help-definitions">
+            <div>
+              <dt>Put at Edge</dt>
+              <dd>Move a Library note into a free edge slot. If the edge is full, Margo asks before replacing the oldest unpinned note.</dd>
+            </div>
+            <div>
+              <dt>Remove from Edge</dt>
+              <dd>Keep the note active in the Library and clear its pin.</dd>
+            </div>
+            <div>
+              <dt>Archive</dt>
+              <dd>Remove the note from the active Library and edge without deleting its text.</dd>
+            </div>
+            <div>
+              <dt>Restore to Library</dt>
+              <dd>Return an archived note to the Library without displacing an edge note.</dd>
+            </div>
+          </dl>
+          <p><b>Delete</b> removes the selected note. Choose <b>Undo Delete</b> from the menu bar or press <kbd>⌘Z</kbd> to recover the latest deletion. Press <kbd>⌘⌫</kbd> to delete from the full Library editor.</p>
+        </section>
+
+        <section class="help-section" id="files">
+          <h2>Import, export, and backup</h2>
+          <p>Open <b>Library Tools</b> from the toolbar for complete file controls.</p>
+          <dl class="help-definitions">
+            <div>
+              <dt>Import Text Files</dt>
+              <dd>Choose one or more UTF-8 plain-text files. Available edge slots fill first and every remaining import stays in the Library.</dd>
+            </div>
+            <div>
+              <dt>Export</dt>
+              <dd>Save the selected note as a plain-text file with a safe filename based on its first line.</dd>
+            </div>
+            <div>
+              <dt>Back Up Library</dt>
+              <dd>Create one <code>.margo</code> file containing every note, color, date, edge placement, archive state, and pin state.</dd>
+            </div>
+            <div>
+              <dt>Restore Backup</dt>
+              <dd>Validate a <code>.margo</code> file, preserve a recovery copy of the current Library, then replace it.</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section class="help-section" id="shortcuts">
+          <h2>Displays and shortcuts</h2>
+          <p>Margo creates one edge deck for every connected display. Global actions target the display under the pointer, then fall back to the primary display.</p>
+          <dl class="shortcut-list">
+            <div><dt><kbd>⌥⌘N</kbd></dt><dd>Create a note.</dd></div>
+            <div><dt><kbd>⌥⌘M</kbd></dt><dd>Show or hide edge notes.</dd></div>
+            <div><dt><kbd>⌘Z</kbd></dt><dd>Undo the latest deletion.</dd></div>
+            <div><dt><kbd>⌘⌫</kbd></dt><dd>Delete the selected Library note.</dd></div>
+            <div><dt><kbd>Esc</kbd></dt><dd>Close an expanded edge deck or sticky.</dd></div>
+          </dl>
+          <p>Normal desktop Spaces are supported. Full-screen app Spaces are not supported in the current beta.</p>
+          <p><b>Launch at Login</b> is available from the Margo menu bar and remains off until you enable it.</p>
+        </section>
+
+        <section class="help-section" id="privacy">
+          <h2>Data and privacy</h2>
+          <p>Margo stores its version 3 Library at <code>~/Library/Application Support/Margo/notes.json</code>. The file contains note text, marker colors, note order, timestamps, edge placement, archive state, and pin state.</p>
+          <p>Margo has no account, server, analytics, ads, AI, sync, crash SDK, or content upload. Opening Help, a release, Apple guidance, or the feedback link hands that explicit action to your browser.</p>
+          <p>Deleting <b>Margo.app</b> does not delete the Library. Back it up first, then remove the Margo folder from Application Support if you want to erase the local data.</p>
+          <p><a href="privacy.html">Read the complete privacy note</a></p>
+        </section>
+
+        <section class="help-section" id="troubleshooting">
+          <h2>Troubleshooting</h2>
+          <h3>macOS will not open Margo</h3>
+          <p>Confirm that Margo is in Applications. Try to open it once, then use Privacy &amp; Security to choose Open Anyway. Review the checksum and Apple guidance before overriding the warning.</p>
+
+          <h3>The edge notes are missing</h3>
+          <p>Press <kbd>⌥⌘M</kbd> or choose <b>Show Edge Notes</b> from the menu bar. Move the pointer to the right edge of the display you want. Leave a full-screen app Space if one is active.</p>
+
+          <h3>A note will not move to the edge</h3>
+          <p>Five pinned notes occupy all five slots. Unpin or remove one edge note, then use <b>Put at Edge</b> again.</p>
+
+          <h3>Margo reports a save problem</h3>
+          <p>Margo keeps the current text in memory and shows the storage error. Resolve the reported permission or disk problem before quitting. If the Library file is damaged at launch, Margo moves it to a timestamped recovery file instead of overwriting it.</p>
+
+          <p class="help-feedback">Still stuck? <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback through the public issue tracker.</a></p>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <div class="footer-brand">
+        <img src="assets/MargoMark.svg" alt="">
+        <span>Margo Help</span>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="index.html">Margo home</a>
+        <a href="https://incmak.github.io/margo-releases/demo/">Demo</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="https://github.com/incmak/margo-releases/issues/new">Send feedback</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
