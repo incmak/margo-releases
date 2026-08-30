@@ -429,7 +429,7 @@ footer,
 }
 
 .demo-frame {
-  width: min(calc(100% - 48px), 1500px);
+  width: min(calc(100% - 80px), 1500px);
   margin: clamp(56px, 8vw, 100px) auto 0;
   padding: 7px;
   overflow: hidden;
@@ -697,6 +697,10 @@ footer nav {
 }
 
 @media (max-width: 980px) {
+  .demo-frame {
+    width: min(calc(100% - 48px), 1500px);
+  }
+
   .edge-nav {
     position: relative;
     top: auto;
